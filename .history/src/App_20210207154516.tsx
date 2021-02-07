@@ -18,7 +18,7 @@ function App() {
       setParams(prevParams => {
         return { ...prevParams, [param]: value}
       })
-    }, 1000)
+    }, 500)
   }
 
   return (

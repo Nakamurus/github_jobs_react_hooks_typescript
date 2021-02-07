@@ -14,11 +14,9 @@ function App() {
     const param = e.target.name
     const value = e.target.value
     setPage(1)
-    setTimeout(() => {
-      setParams(prevParams => {
-        return { ...prevParams, [param]: value}
-      })
-    }, 1000)
+    setParams(prevParams => {
+      return { ...prevParams, [param]: value}
+    })
   }
 
   return (
